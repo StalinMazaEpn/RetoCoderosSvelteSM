@@ -1,71 +1,54 @@
 # Reto Coderos Componente Tarjeta con Svelte
 
+Simular la funcionalidad de un módulo para agregar un nuevo método de pago, es decir una tarjeta de crédito o débito, dependiendo el número de tarjeta, el sistema detectará si se trata de una tarjeta VISA o Mastercard, además, en cuanto el sistema detecte el tipo de tarjeta, deberá cambiar el logo del tipo de tarjeta y la imagen de muestra de la tarjeta. Los datos de la tarjeta se actualizarán conforme se llene el formulario. 
 
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+Al hacer clic en agregar método de pago se deberán validar los campos y si están en orden se mostrará una nueva pantalla en donde se indique el mensaje el método de pago se agregó exitosamente.
+
+El formulario deberá tener los siguientes campos:
+
+- Número de la tarjeta
+- Nombre del tarjetahabiente
+- Fecha de expiración
+- Código CVV
+- Botón para guardar con el texto: “agregar método de pago"
+
+El código terminado deberá subirse a:
+
+- Un repositorio público (Github, Gitlab, Bitbucket,...)
+- Publicarlo usando la infraestructura serveless Now  https://zeit.co/now
 
 ---
 
-# svelte app
+## Como utilizar ?
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+*Verifica que tengas instalado [Node.js](https://nodejs.org)
 
 ```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
+# Clona el repositorio
+git clone direccion_to_remote_url.git creditCardRepo
+# Mover al Directorio 
+cd creditCardRepo
+# Instalar las dependencias
 npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
+# Corre el Servidor de Desarrollo
 npm run dev
+# Construye tu proyecto
+npm run build
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-
-## Deploying to the web
+## Subir proyecto a Zeit
 
 ### With [now](https://zeit.co/now)
 
-Install `now` if you haven't already:
+Instala `now` si no lo tienes instalado
 
 ```bash
 npm install -g now
 ```
 
-Then, from within your project folder:
+Despúes muevete a tu proyecto y ejecuta el comando now
 
 ```bash
 now
 ```
 
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
