@@ -19,7 +19,7 @@ El código terminado deberá subirse a:
 
 ---
 
-## Como utilizar ?
+## Como utilizar este proyecto?
 
 *Verifica que tengas instalado [Node.js](https://nodejs.org)
 
@@ -38,7 +38,7 @@ npm run build
 
 ## Subir proyecto a Zeit
 
-### With [now](https://zeit.co/now)
+### Con [now](https://zeit.co/now)
 
 Instala `now` si no lo tienes instalado
 
@@ -51,4 +51,27 @@ Despúes muevete a tu proyecto y ejecuta el comando now
 ```bash
 now
 ```
+
+
+### Proyecto Final
+
+
+Pantalla para añadir el método de pago
+
+![Componente Inicial de la Tarjeta de Credito](./img/initial_page.jpg)
+
+
+Pantalla donde se detecta el tipo de tarjeta de credito
+
+![Componente Inicial de la Tarjeta de Credito](./img/card_checked.jpg)
+
+
+Pantalla donde el método de pago fue agregado
+
+![Componente Inicial de la Tarjeta de Credito](./img/card_method_added.png)
+
+
+### Autor
+
+> Stalin Maza - Desarrollador Web y Móvil
 

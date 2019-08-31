@@ -1,7 +1,5 @@
-        <script>
+<script>
     import CreditCard from './components/CreditCard.svelte';
-	// export let name2;
-    let name = '';
 </script>
 
 <style>
